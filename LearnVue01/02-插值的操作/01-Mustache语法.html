@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <h2>{{message}}</h2>
+  <h2>{{message}},建军桑</h2>
+  <h2>{{firstName + lastName}}</h2>
+  <h2>{{lastName + firstName + '的年龄是' + age}}</h2>
+
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      firstName: '建军',
+      lastName: '陈',
+      age: 22
+    }
+  })
+</script>
+</body>
+</html>

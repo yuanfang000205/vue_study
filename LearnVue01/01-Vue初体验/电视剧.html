@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+	<ul>
+    <li v-for="item in TVs">{{item}}</li>
+  </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  TVs: ['觉醒年代','跨过鸭绿江','光荣与梦想','大决战']
+		}
+	})
+</script>
+</body>
+</html>
