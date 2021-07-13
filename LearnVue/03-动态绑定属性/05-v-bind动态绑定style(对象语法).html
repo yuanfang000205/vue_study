@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <!--<h2 :style="{属性名: 属性值, key: value}"></h2>-->
+	<h2 :style="getStyle()">{{message}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  message: '你好啊',
+      bgColor: 'blue',
+      finalSize: '100px'
+		},
+    methods: {
+		  getStyle: function () {
+        return {background: this.bgColor, fontSize: this.finalSize}
+      }
+    }
+	})
+</script>
+</body>
+</html>

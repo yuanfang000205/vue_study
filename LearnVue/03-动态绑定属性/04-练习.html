@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+	<ul>
+    <li v-for="(m,index) in TVs" :class="getClasses()" @click="btn()" :style="getStyle()">{{m}}</li>
+  </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  message: '你好啊',
+      TVs: ['黑猫警长','大耳朵图图','蜡笔小新','哆啦A梦','数码宝贝'],
+      isActive: true,
+      isLine: true,
+      bgColor: 'red'
+		},
+    methods: {
+		  getClasses: function () {
+        return {active: this.isActive, line: this.isLine}
+      },
+      btn: function () {
+        this.isActive = !this.isActive;
+      },
+      getStyle: function () {
+        return {background: this.bgColor}
+      }
+    }
+	})
+</script>
+</body>
+</html>

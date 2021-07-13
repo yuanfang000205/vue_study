@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <img v-bind:src="imgURL" alt="">
+  <!-- 语法糖写法 -->
+  <img :src="imgURL" alt="">
+</div>
+<script src="../js/vue.js"></script>
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  message: '你好啊',
+      imgURL: 'https://tse1-mm.cn.bing.net/th/id/R-C.3d3649e757bbc6eb6ac45ff59d7a5d6b?rik=maGWIhW%2f0eqX6Q&riu=http%3a%2f%2fpicture.ik123.com%2fuploads%2fallimg%2f201118%2f12-20111Q64451.jpg&ehk=GTiEC%2fNXH1X5jaxYbPoJ%2fND1JHRWAVZTmk4fvvcPRUE%3d&risl=&pid=ImgRaw'
+		}
+	})
+</script>
+
+</body>
+</html>
