@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
+<style>
+  .active{
+    color: red;
+  }
+</style>
 <body>
 <div id="app">
 	<ul>
-    <li v-for="(m,index) in TVs" :class="getClasses()" @click="btn()" :style="getStyle()">{{m}}</li>
+    <li v-for="(item,index) in TVs"
+        :class="{active: currentIndex === index}"
+        @click="liClick(index)">{{item}}</li>
   </ul>
 </div>
 <script src="../js/vue.js"></script>
@@ -17,19 +24,11 @@
 		data: {
 		  message: '你好啊',
       TVs: ['黑猫警长','大耳朵图图','蜡笔小新','哆啦A梦','数码宝贝'],
-      isActive: true,
-      isLine: true,
-      bgColor: 'red'
+      currentIndex: 0
 		},
     methods: {
-		  getClasses: function () {
-        return {active: this.isActive, line: this.isLine}
-      },
-      btn: function () {
-        this.isActive = !this.isActive;
-      },
-      getStyle: function () {
-        return {background: this.bgColor}
+		  liClick(index){
+		    this.currentIndex = index;
       }
     }
 	})
