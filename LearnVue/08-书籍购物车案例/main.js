@@ -47,17 +47,15 @@ const app = new Vue({
     }
   },
   computed: {
-    totalPrice(){
-      let totalPrice = 0;
-      for (let i in this.books){
-        totalPrice += this.books[i].price * this.books[i].count;
-      }
-      return totalPrice;
+    totalPrice() {
+      return this.books.reduce(function (preValue,book) {
+        return preValue + book.price * book.count;
+      },0)
     }
   },
-  filters: {
-    showPrice(price){
-      return '￥' + price.toFixed(2)
+    filters: {
+      showPrice(price) {
+        return '￥' + price.toFixed(2)
+      }
     }
-  }
 })
