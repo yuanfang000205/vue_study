@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+	<cpn :c-movies="movies"></cpn>
+</div>
+<template id="cpn">
+  <div>
+    <ul>
+      <li v-for="m in cMovies">{{m.role}}</li>
+    </ul>
+  </div>
+</template>
+<script src="../js/vue.js"></script>
+<script>
+  const cpn = {
+    template: '#cpn',
+    props: {
+      cMovies: {
+        type: Array,
+        default(){
+          return []
+        }
+      }
+    }
+  }
+	const app = new Vue({
+		el: '#app',
+		data: {
+      movies: [
+        {name: '海贼王',role: '路飞'},
+        {name: '数码宝贝',role: '被选中的孩子'},
+        {name: '火影忍者',role: '鸣人'}
+      ]
+		},
+    components: {
+		  cpn
+    }
+	})
+</script>
+
+</body>
+</html>

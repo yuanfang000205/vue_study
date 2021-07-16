@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+	<cpn :cgames="games" :cmessage="message"></cpn>
+</div>
+<template id="cpn">
+  <div>
+    <ul>
+      <li v-for="game in cgames">{{game}}</li>
+    </ul>
+    <h2>{{cmessage}}</h2>
+  </div>
+</template>
+<script src="../js/vue.js"></script>
+<script>
+  //父传子:props
+  const cpn = {
+    template: '#cpn',
+    //数组
+    // props: ['cgames','cmessage'],
+    props: {
+      //1.类型限制
+      // cgames: Array,
+      // cmessage: String
+
+      //2.提供一些默认值
+      cmessage: {
+        type: String,
+        default: 'aaaaa',
+        required: true  //必传值
+      },
+      //类型是对象或数组时默认值必须为函数
+      cgames: {
+        type: Array,
+        default(){
+          return []
+        }
+      }
+    }
+  };
+
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  message: '冲冲冲',
+      games: ['CrossFire','CSgo','PUBG','LOL']
+		},
+    components: {
+		  cpn
+    }
+	})
+</script>
+
+</body>
+</html>

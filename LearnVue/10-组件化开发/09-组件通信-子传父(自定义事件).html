@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--父组件模板-->
+<div id="app">
+  <h2>当前计数:{{count}}</h2>
+  <cpn @increment="btn" @decrement="btn"></cpn>
+</div>
+<!--子组件模板-->
+<template id="cpn">
+  <div>
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+  </div>
+
+</template>
+<script src="../js/vue.js"></script>
+<script>
+  //子组件
+  const cpn = {
+    template: '#cpn',
+    data(){
+      return{
+        counter: 0
+      }
+    },
+    methods: {
+      increment(){
+        this.counter++;
+        this.$emit('increment',this.counter);
+      },
+      decrement(){
+        this.counter--;
+        this.$emit('decrement',this.counter);
+
+      }
+    }
+  }
+  //父组件
+  const app = new Vue({
+    el: '#app',
+    data: {
+      count: 0
+    },
+    components: {
+      cpn
+    },
+    methods: {
+      btn(counter){
+        this.count = counter;
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

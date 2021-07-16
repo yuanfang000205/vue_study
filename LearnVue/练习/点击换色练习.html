@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  .bg{
+    color: red;
+  }
+</style>
+<body>
+
+<div id="app">
+  
+	<ul>
+    <li v-for="(item,index) in love"
+        :class="{bg: cIndex === index}"
+        @click="liClick(index)">{{item}}</li>
+  </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  love: ['奥特曼','战队','骑士','铠甲','火力少年王'],
+      cIndex: 0
+		},
+    methods: {
+		  liClick(index){
+		    this.cIndex = index;
+      }
+    }
+	})
+</script>
+
+</body>
+</html>
