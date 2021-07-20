@@ -166,6 +166,80 @@
 * 父传子: props
 * 子传父:$emit
 
+#### 9.9.父子组件的访问
+
+* children/refs
+* parent/root
+
+#### 9.10.slot的使用
+
+* 基本使用：组件中添加slot标签并起名字，使用时添加slot="name"即可目的：让封装的组件更加具有扩展性，让使用者可以决定组件内部的一些内容到底展示什么
+* 具名插槽
+* 编译的作用域
+* 作用域插槽：父组件替换标签，子组件显示内容
+
+### 十、前端模块化
+
+#### 10.1.为什么要使用模块化
+
+* 简单写js代码带来的问题
+* 闭包引起代码不可复用
+* 实现简单的模块化
+* AMD/CMD/CommonJS
+
+#### 10.2.ES6中模块化的使用
+
+* export
+* import
+
+### 十一、webpack
+
+#### 11.1.什么是webpack
+
+* webpack和gulp对比：grunt/gulp更加强调的是前端流程的自动化，模块化不是他的核心
+
+  webpack更加强调模块化开发管理，二文件压缩合并、预处理等功能，是他附带的功能
+
+* webpack依赖环境：webpack为了可以正常运行，必须依赖node环境，noder环境为了可以正常的执行代码，必须包含各种依赖包  npm工具(node pakages manager)
+
+* 安装webpack
+
+#### 11.2.webpack的起步
+
+* webpack命令
+* webpack配置：webpack.config.js/package.json(scripts)
+
+#### 11.3.webpack的loader
+
+* css-loader/style-loader
+* less-loader/less
+* url-loader/file-loader
+* babel-loader
+
+#### 11.4.webpack中配置Vue
+
+* vue-loader
+
+#### 11.5.webpack的plugin
+
+* uglifyjs-webpack-plugin
+* eslint-webpack-plugin
+* 。。。。。。
+
+#### 11.6.搭建本地服务器
+
+* webpack-dev-server
+
+#### 11.7.配置文件的分离
+
+### 十二、Vue CLI
+
+#### 12.1.什么是CLI
+
+* 脚手架是什么
+* CLI依赖webpack，node，npm
+* 安装CLI3 ->拉取CLI2模板
+
 
 
 
