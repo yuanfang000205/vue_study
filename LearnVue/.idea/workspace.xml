@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4783414-813b-44b8-9e0c-44eb0d34b1ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnVue-webpack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/components/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/components/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/components/User.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnVue-webpack/learnvuerouter/static/.gitkeep" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,7 +80,8 @@
     <session id="-1825383341">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
@@ -61,13 +89,13 @@
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="118" />
+          <entry key="html" value="122" />
           <entry key="js" value="17" />
           <entry key="ts" value="1" />
         </counts>
@@ -75,7 +103,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="118" />
+          <entry key="HTML" value="122" />
           <entry key="JavaScript" value="17" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -83,14 +111,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="128" />
-          <entry key="html" value="10912" />
+          <entry key="html" value="11210" />
           <entry key="js" value="2371" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="128" />
-          <entry key="HTML" value="10912" />
+          <entry key="HTML" value="11210" />
           <entry key="JavaScript" value="2371" />
         </counts>
       </usages-collector>
@@ -110,17 +138,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/aaa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1204">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/a1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/点击换色练习.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-249">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/a1.js">
+        <entry file="file://$PROJECT_DIR$/练习/子传父练习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="196">
+              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -131,8 +186,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -143,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/03-动态绑定属性/04-练习.html" />
         <option value="$PROJECT_DIR$/08-书籍购物车案例/style.css" />
         <option value="$PROJECT_DIR$/08-书籍购物车案例/index.html" />
         <option value="$PROJECT_DIR$/08-书籍购物车案例/高阶函数.js" />
@@ -194,6 +248,7 @@
         <option value="$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/bbb.js" />
         <option value="$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/aaa.js" />
         <option value="$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/a1.js" />
+        <option value="$PROJECT_DIR$/练习/test.html" />
       </list>
     </option>
   </component>
@@ -217,7 +272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,13 +287,13 @@
             <path>
               <item name="LearnVue" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnVue" type="462c0819:PsiDirectoryNode" />
-              <item name="12-前端模块化" type="462c0819:PsiDirectoryNode" />
-              <item name="02-ES6的模块化实现" type="462c0819:PsiDirectoryNode" />
+              <item name="练习" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,14 +390,16 @@
       <workItem from="1626434841238" duration="3360000" />
       <workItem from="1626503434447" duration="14008000" />
       <workItem from="1626585671716" duration="700000" />
+      <workItem from="1627036065595" duration="650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73578000" />
+    <option name="totallyTimeSpent" value="74228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14172813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -390,13 +446,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/10-组件化开发/07-组件中的data为函数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/10-组件化开发/06-组件中的数据存放问题.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -543,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/练习/子传父练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/练习/父传子练习.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-109">
@@ -561,13 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/练习/点击换色练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -699,20 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/aaa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-420">
@@ -722,10 +743,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/aaa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/a1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="252">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/点击换色练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/子传父练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>

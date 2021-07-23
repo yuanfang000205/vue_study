@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style>
+  .bgColor{
+    color: blue;
+  }
+</style>
+
+<div id="app">
+	<div>
+    <ul>
+      <li v-for="(item,index) in movies" :class="{bgColor: cIndex === index}" @click="Click(index)">{{item}}</li>
+    </ul>
+  </div>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+		  message: '你好啊',
+      movies: ['火箭','高铁','邮轮','电脑','飞机','汽车'],
+      cIndex: 0
+		},
+    methods: {
+		  Click(index){
+		    this.cIndex = index;
+      }
+    }
+	})
+</script>
+
+</body>
+</html>

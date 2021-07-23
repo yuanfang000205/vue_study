@@ -1,7 +1,11 @@
 <template>
   <div>
-    <h2>我是About</h2>
-    <p>我是内容</p>
+    <ul>
+      <li>新闻</li>
+      <li>新闻</li>
+      <li>新闻</li>
+      <li>新闻</li>
+    </ul>
   </div>
 </template>
 
