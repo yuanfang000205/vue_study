@@ -234,11 +234,272 @@
 
 ### 十二、Vue CLI
 
-#### 12.1.什么是CLI
+#### 1.1. runtime-compiler和runtime-only的区别
 
-* 脚手架是什么
-* CLI依赖webpack，node，npm
-* 安装CLI3 ->拉取CLI2模板
+* ESLint到底是什么?  用于对代码的限制
+
+
+* template -> ast -> render -> vdom -> 真实DOM
+* render: (h) => h, -> createElement
+
+
+
+#### 1.2. Vue CLI3
+
+* 如何通过CLI3创建项目
+* CLI3的目录结构
+
+* 配置文件: 1.Vue UI 2.隐藏的配置文件 3.自定义vue.config.js
+
+
+
+### 十三、Vue-Router
+
+#### 13.1. 什么是前端路由
+
+* 后端渲染\后端路由
+* 前后端分离
+* SPA\前端路由：核心是改变URL，但是页面不进行整体刷新
+
+#### 13.2. 路由的基本配置
+
+* 安装vue-router：npm install vue-router --save 
+* （-dev开发版本）
+* Vue.use -> 创建VueRouter对象 -> 挂在到Vue实例上
+* 配置映射关系: 1.创建组件 2.配置映射关系 3.使用router-link(跳转)/router-view(用于占位)
+
+#### 13.3. 细节处理
+
+* 默认路由: redirect(重定向)
+* mode: history(去掉路径中的#)
+* router-link -> tag/replace/active-class
+
+#### 13.4. 动态路由
+
+* /user/:id
+* this.$route.params.id
+
+
+
+#### 13.5. 参数的传递
+
+* params
+* query -> URL
+* URL: 
+  * 协议://主机:端口/路径?查询
+  * scheme://host:port/path?query#fragment
+
+#### 13.6. 路由嵌套
+
+* children: []
+
+* ```
+  {
+    path: '/home',
+    component: Home,
+    meta: {
+      title: '首页'
+    },
+    children: [
+      {
+        path: '/',
+        redirect: 'news'
+      },
+      {
+        path: 'news',
+        component: HomeNews
+      },
+      {
+        path: 'message',
+        component: HomeMessage
+      }
+    ]
+  },
+  ```
+
+
+
+#### 13.7. 导航守卫
+
+ ![image.png](https://cdn.nlark.com/yuque/0/2021/png/22094093/1627033263211-f85f3afb-b2e4-453a-8d3e-311393a5d974.png)
+
+* 全局导航守卫
+* 路由独享守卫
+* 组件类守卫
+
+
+
+#### 13.8. Keep-alive
+
+ ![image.png](https://cdn.nlark.com/yuque/0/2021/png/22094093/1627038845147-229a9582-6077-4e43-b426-4670c4428664.png)
+
+### 十四、Promise
+
+#### 14.1. Promise的基本使用
+
+* 如何将异步操作放入到promise中
+
+```javascript
+new Promise((resolve, reject) => {
+  setTimeout(() => {
+    //成功的时候调用Promise
+    // resolve('Hello World')
+    //失败的时候调用reject
+    reject('error message')
+  },1000)
+}).then((data) => {
+  //编写处理代码
+  console.log('Hello World');
+}).catch((err) => {
+  console.log(err);
+})
+```
+
+* (resolve, reject) => then/catch
+
+
+
+#### 14.2. Promise的链式调用
+
+* then()方法里继续调用函数进行异步操作
+* 第一次then()成功后继续第二次then()，直至失败则调用.catch()方法
+
+#### 14.3. Promise的all方法
+
+```javascript
+Promise.all([
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('result1')
+      },3000)
+    }),
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('result2')
+      },2000)
+    })
+]).then(results => {
+  console.log(results);
+})
+```
+
+### 十五、Vuex
+
+#### 15.1. 什么是状态管理
+
+<h4 style="color: red">通过一个个单独的模块来对代码进行管理</h4>
+
+#### 15.2. Vuex的基本使用
+
+* state -> 直接修改state(错误)
+* mutations -> devtools
+
+#### 15.3. 核心概念
+
+* state -> 单一状态树 ：必须是响应式的，当state发生改变时，Vue中的组件会自动更新
+* getters -> 作用类似computed计算属性
+* mutations -> 同步操作
+* actions -> 异步操作(Promise)
+* modules：可以编写多个模块以及state
+
+
+
+#### 15.4. 目录组织方式
+
+ ![image-20210730171524950](C:\Users\WE\AppData\Roaming\Typora\typora-user-images\image-20210730171524950.png)
+
+
+
+### 十六、网络请求封装
+
+#### 16.1. 网络请求方式的选择
+
+略
+
+#### 16.2. axios的基本使用
+
+* 安装：npm install axios --save
+
+* 调用：import axios from 'axios'
+
+* 使用：
+
+  ```javascript
+  axios({
+    url: 'http://123.207.32.32:8000/home/multidata'
+  }).then(res => {
+    // console.log(res);
+    this.result = res;
+  })
+  ```
+
+
+
+#### 16.3. axios的相关配置
+
+* ```javascript
+  3.使用全局配置请求
+  axios.defaults.baseURL = 'http://123.207.32.32:8000';
+  axios.defaults.timeout = 5000;
+  axios.all([axios({
+    url: '/home/multidata'
+  }),axios({
+    url: '/home/data',
+    params: {
+      type: 'sell',
+      page: 5
+    }
+  })])
+    .then(axios.spread((res1,res2) => {
+      console.log(res1);
+      console.log(res2);
+    }))
+  .then(results => {
+    console.log(results);
+  })
+  ```
+
+
+
+#### 16.4. axios的创建实例
+
+* ```
+  // 1. 创建axios的实例
+  const instance = axios.create({
+    baseURL: 'http://123.207.32.32:8000',
+    timeout: 5000
+  })
+  ```
+
+#### 16.5. axios的封装
+
+* 封装request.js文件，导入axios，再导出函数request
+
+#### 16.6. axios的拦截器
+
+* ```javascript
+  // 2. axios的拦截器
+  // 2.1. 请求拦截要求
+  instance.interceptors.request.use(config =>{
+    // console.log(config);
+    // 1.比如config中的一些信息不符合服务器的要求
+  
+    // 2.比如每次发送网络请求时,都希望在界面中显示一个请求的图标
+  
+    // 3.某些网络请求(比如登录(token)),必须携带特殊的信息
+  
+    return config;
+  },error => {
+    // console.log(error);
+  });
+  // 2.相应拦截
+  instance.interceptors.response.use(res => {
+    console.log(res);
+    return res.data
+  },error => {
+    console.log(error);
+  });
+  ```
 
 
 
