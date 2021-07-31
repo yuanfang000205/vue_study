@@ -50,6 +50,7 @@
     font-size: 14px;
   }
 
+
   .tab-bar-item img {
     width: 24px;
     height: 24px;

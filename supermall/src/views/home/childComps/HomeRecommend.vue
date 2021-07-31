@@ -32,7 +32,7 @@
     font-size: 14px;
 
     padding: 10px 0 20px;
-    border-bottom: 10px solid #eee;
+    border-bottom: 2px solid #eee;
   }
   .recommend-item {
     flex: 1;
