@@ -50,7 +50,7 @@
 
 ### 四.对商品数据进行展示
 
-#### 4.1.封装GoodsList.Vue组件
+#### 4.1.封装GoodsList.vue组件
 
 * props: goods -> list[30]
 * v-for goods -> GoodsListItem[30]
@@ -58,7 +58,7 @@
 
  
 
-####  4.2.封装GoodsListItem.Vue组件
+####  4.2.封装GoodsListItem.vue组件
 
 * props: goodsItem
 
@@ -82,11 +82,11 @@
 
 #### 5.2. 在Vue项目中使用Better-Scroll
 
-* 在Profile.Vue中简单的演示
-* 对Better-Scroll进行封装: Scroll.Vue
-* Home.Vue和Scroll.Vue之间进行通信
-  * Home.Vue将probeType设置为3
-  * Scroll.Vue需要通过$emit, 实时将事件发送到Home.Vue
+* 在Profile.vue中简单的演示
+* 对Better-Scroll进行封装: Scroll.vue
+* Home.vue和Scroll.vue之间进行通信
+  * Home.vue将probeType设置为3
+  * Scroll.vue需要通过$emit, 实时将事件发送到Home.vue
 
 ### 六. 回到顶部(BackTop)
 

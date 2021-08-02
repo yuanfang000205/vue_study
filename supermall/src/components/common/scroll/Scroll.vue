@@ -38,17 +38,25 @@
         // console.log(position);
         this.$emit('scroll',position)
       });
-      // 设置上拉刷新
+      // 3. 监听scroll是否滚动到底部
       this.scroll.on('pullingUp',() => {
         this.$emit('upLoad')
       })
+
+
     },
     methods: {
       scrollTo(x,y,time) {
-        this.scroll.scrollTo(x,y,time)
+        this.scroll && this.scroll.scrollTo(x,y,time)
       },
       finishPullUp() {
-        this.scroll.finishPullUp()
+        this.scroll && this.scroll.finishPullUp()
+      },
+      refresh() {
+        this.scroll && this.scroll.refresh()
+      },
+      getScrollY(){
+        return this.scroll ? this.scroll.y : 0
       }
     }
   }

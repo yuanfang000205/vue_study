@@ -24,7 +24,6 @@
 
   .left, .right {
     width: 60px;
-
   }
 
   .center {
