@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4783414-813b-44b8-9e0c-44eb0d34b1ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LearnBS/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LearnBS/bscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../supermall/src/components/common/scroll/Scroll.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../supermall/src/components/content/backTop/BackTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vue学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Vue学习.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../supermall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/0026948274482d20caa7705c45ce032f.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/0026948274482d20caa7705c45ce032f.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/11a219cad7d1e41abea9682a79f4c127.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/11a219cad7d1e41abea9682a79f4c127.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/24bde9bcbe6f62ef4c950cbde3044cf3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/24bde9bcbe6f62ef4c950cbde3044cf3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/25c82a68f3be19ae1407b1db6944b5f4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/25c82a68f3be19ae1407b1db6944b5f4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/35565f1fc268d3ee2adc6c70007ff109.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/35565f1fc268d3ee2adc6c70007ff109.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/69875d997eb3679667d81bfeb16c2f0b.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/69875d997eb3679667d81bfeb16c2f0b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d21c545d47f0c8c186f751638c38a46.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d21c545d47f0c8c186f751638c38a46.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d6dd222003efe2b9a92231eb062dae5.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d6dd222003efe2b9a92231eb062dae5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/727464bf7931670e2afed8fecbc8b849.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/727464bf7931670e2afed8fecbc8b849.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a3dcc9b37a53a7f022c57432db56a4a8.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a3dcc9b37a53a7f022c57432db56a4a8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a9a2f5ecd0c92386f04330dadf0c3c07.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a9a2f5ecd0c92386f04330dadf0c3c07.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/b5e843aae51258801f0bb67ad589a6d2.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/b5e843aae51258801f0bb67ad589a6d2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/ce198f13bb1589b4b1bf4f8d7968cc95.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/ce198f13bb1589b4b1bf4f8d7968cc95.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/d1e0170df2ad2e5c6db4f1590b02bffe.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/d1e0170df2ad2e5c6db4f1590b02bffe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/d70cecc9e5bb0edc86c0be708db9c8bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/d70cecc9e5bb0edc86c0be708db9c8bd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/de78b0944fa7b090f4cece97c52f10ec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/de78b0944fa7b090f4cece97c52f10ec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/e19961d885835079f850a16709e270db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/e19961d885835079f850a16709e270db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/f91c8625ac48b3bb2737c492e55e4e61.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/f91c8625ac48b3bb2737c492e55e4e61.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/fcdbb1fcddd3337e173d1d38068b9998.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/fcdbb1fcddd3337e173d1d38068b9998.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/src/views/category/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/category/Category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/home/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/src/views/profile/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/profile/Profile.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -81,9 +53,10 @@
     <session id="-1825383341">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
@@ -91,13 +64,13 @@
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="126" />
+          <entry key="html" value="127" />
           <entry key="js" value="17" />
           <entry key="ts" value="1" />
         </counts>
@@ -105,7 +78,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="126" />
+          <entry key="HTML" value="127" />
           <entry key="JavaScript" value="17" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -128,15 +101,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12-前端模块化/02-ES6的模块化实现/aaa.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -176,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/练习/子传父练习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="868">
               <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
             </state>
           </provider>
@@ -185,7 +149,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/练习/父传子练习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
+            <state relative-caret-position="336">
               <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
@@ -194,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10-组件化开发/12-组件访问-父访问子-$refs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="420">
               <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
@@ -203,17 +167,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10-组件化开发/09-组件通信-父传子(props中的驼峰标识).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="504">
               <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10-组件化开发/10-组件通信-子传父(自定义事件).html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
               <caret line="10" column="17" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10-组件化开发/08-组件通信-父传子.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -374,17 +347,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
-    <configuration name="02-slot-具名插槽的使用.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVue/11-组件化高级/02-slot-具名插槽的使用.html">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.08-组件通信-父传子.html">
     <configuration name="03-什么是编译的作用域.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVue/11-组件化高级/03-什么是编译的作用域.html">
       <method v="2" />
     </configuration>
     <configuration name="04-作用域插槽的使用.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVue/11-组件化高级/04-作用域插槽的使用.html">
       <method v="2" />
     </configuration>
-    <configuration name="父子组件双向绑定练习.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVue/练习/父子组件双向绑定练习.html">
+    <configuration name="08-组件通信-父传子.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVue/10-组件化开发/08-组件通信-父传子.html">
       <method v="2" />
     </configuration>
     <configuration name="父传子练习.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnVue/练习/父传子练习.html">
@@ -400,20 +370,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.父子组件双向绑定练习.html" />
-      <item itemvalue="JavaScript Debug.02-slot-具名插槽的使用.html" />
       <item itemvalue="JavaScript Debug.03-什么是编译的作用域.html" />
       <item itemvalue="JavaScript Debug.04-作用域插槽的使用.html" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="JavaScript Debug.08-组件通信-父传子.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.08-组件通信-父传子.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.04-作用域插槽的使用.html" />
         <item itemvalue="JavaScript Debug.03-什么是编译的作用域.html" />
-        <item itemvalue="JavaScript Debug.02-slot-具名插槽的使用.html" />
       </list>
     </recent_temporary>
   </component>
@@ -440,11 +409,12 @@
       <workItem from="1626585671716" duration="700000" />
       <workItem from="1627036065595" duration="650000" />
       <workItem from="1627808248468" duration="106000" />
+      <workItem from="1627962654794" duration="151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74334000" />
+    <option name="totallyTimeSpent" value="74485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -627,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10-组件化开发/08-组件通信-父传子.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09-v-model的使用/01-v-model的基本使用.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -801,28 +764,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/练习/子传父练习.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="868">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/练习/父传子练习.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
+        <state relative-caret-position="336">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10-组件化开发/12-组件访问-父访问子-$refs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="420">
           <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10-组件化开发/09-组件通信-父传子(props中的驼峰标识).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="504">
           <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
@@ -831,6 +794,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-组件化开发/08-组件通信-父传子.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
