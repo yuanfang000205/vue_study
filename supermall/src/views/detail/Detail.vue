@@ -6,6 +6,7 @@
      <detail-base-info :goods="goods"/>
      <detail-shop-info :shop-info="shopInfo"/>
      <details-info :details-info="detailsInfo" @imageLoad="imageLoad"/>
+     <detail-params-info :params-info="paramsInfo"/>
    </scroll>
   </div>
 
@@ -20,10 +21,12 @@
   import {getDetails,Goods,Shop} from "network/detail";
   import Scroll from "components/common/scroll/Scroll";
   import DetailsInfo from "./childComps/DetailsInfo";
+  import DetailParamsInfo from "./childComps/DetailParamsInfo";
 
   export default {
     name: "Detail",
     components: {
+      DetailParamsInfo,
       DetailsInfo,
       Scroll,
       DetailShopInfo,
@@ -38,6 +41,7 @@
         goods: {},
         shopInfo: {},
         detailsInfo: {},
+        paramsInfo: {},
         comments: {}
       }
     },
@@ -68,13 +72,15 @@
 
           // 4.保存商品的详情数据
           this.detailsInfo = data.detailInfo
+
+          // 5.获取商品参数信息
+          this.paramsInfo = data.itemParams
         })
       },
       imageLoad() {
         this.$refs.scroll.refresh()
       }
     }
-
   }
 </script>
 
