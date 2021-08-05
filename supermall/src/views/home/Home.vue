@@ -45,6 +45,7 @@
 
   /* 工具方法 */
   import {debounce} from "common/utils";
+  import {itemListenerMixin} from "common/mixins";
 
   export default {
     name: "Home",
@@ -71,9 +72,10 @@
         isShowBackTop: false,
         tabOffsetTop: 0,
         isTabFixed: false,
-        saveY: 0
+        saveY: 0,
       }
     },
+    mixins: [itemListenerMixin],
     computed: {
       showGoods() {
         return this.goods[this.currentType].list;
@@ -84,8 +86,11 @@
       this.$refs.homeScroll.refresh()
     },
     deactivated() {
+      // 1.保存Y值
       this.saveY = this.$refs.homeScroll.getScrollY()
-      console.log(this.saveY);
+      // console.log(this.saveY)
+      // 2.取消全局事件监听
+      this.$bus.$off('imageLoad',this.itemListenerMixin)
     },
     created() {
       // 1. 请求多个数据
@@ -97,13 +102,8 @@
       this.getHomeGoods('sell');
 
     },
-    mounted() {
-      const refresh = debounce(this.$refs.homeScroll.refresh,50)
-      // 监听item中图片加载完成
-      this.$bus.$on('imageLoad',() => {
-        // console.log('...');
-         refresh()
-      })
+    mounted(){
+
     },
 
     methods: {

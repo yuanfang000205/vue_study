@@ -35,10 +35,11 @@
     },
     methods: {
       imgLoad() {
+        this.$emit('imageLoad')
         // 判断，所有图片加载完成之后再一起进行回调
-        if (++this.counter === this.imageLength) {
-          this.$emit('imageLoad')
-        }
+        // if (++this.counter === this.imageLength) {
+        //
+        // }
       }
     },
     watch: {

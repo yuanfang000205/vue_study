@@ -7,6 +7,8 @@
      <detail-shop-info :shop-info="shopInfo"/>
      <details-info :details-info="detailsInfo" @imageLoad="imageLoad"/>
      <detail-params-info :params-info="paramsInfo"/>
+     <detail-comments-info :comments-info="commentsInfo"/>
+     <GoodsList :goods="recommends"/>
    </scroll>
   </div>
 
@@ -18,14 +20,20 @@
   import DetailBaseInfo from "./childComps/DetailBaseInfo";
   import DetailShopInfo from "./childComps/DetailShopInfo";
 
-  import {getDetails,Goods,Shop} from "network/detail";
+  import {getDetails,Goods,Shop,getRecommend} from "network/detail";
   import Scroll from "components/common/scroll/Scroll";
   import DetailsInfo from "./childComps/DetailsInfo";
   import DetailParamsInfo from "./childComps/DetailParamsInfo";
+  import DetailCommentsInfo from "./childComps/DetailCommentsInfo";
+  import GoodsList from "components/content/goods/GoodsList";
+  import {itemListenerMixin} from "common/mixins";
+
 
   export default {
     name: "Detail",
     components: {
+      GoodsList,
+      DetailCommentsInfo,
       DetailParamsInfo,
       DetailsInfo,
       Scroll,
@@ -42,8 +50,12 @@
         shopInfo: {},
         detailsInfo: {},
         paramsInfo: {},
-        comments: {}
+        commentsInfo: {},
+        recommends: []
       }
+    },
+    mounted(){
+
     },
     created() {
       // 1. 保存传入的iid
@@ -52,9 +64,13 @@
       // 2. 根据iid请求详情数据
       this.getDetail(this.iid)
 
-      // 3. 发送
-
-
+      // 3. 发送推荐请求
+      getRecommend(this.iid).then(res => {
+        this.recommends = res.data.list
+      })
+    },
+    destroyed() {
+      this.$bus.$off('imageLoad',this.itemImgListener)
     },
     methods: {
       getDetail() {
@@ -75,9 +91,16 @@
 
           // 5.获取商品参数信息
           this.paramsInfo = data.itemParams
+          
+          // 6.获取评论信息
+          if (data.rate.cRate !== 0){
+            this.commentsInfo = data.rate.list[0]
+          }
         })
       },
       imageLoad() {
+        // this.newRefresh()
+        // console.log('...');
         this.$refs.scroll.refresh()
       }
     }
@@ -87,7 +110,7 @@
 <style scoped>
   #detail {
     position: relative;
-    z-index: 9;
+    z-index: 1;
     background-color: #fff;
     height: 100vh;
   }
@@ -99,6 +122,7 @@
   }
 
   .content {
+    background-color: #fff;
     height: calc(100% - 44px);
   }
 </style>

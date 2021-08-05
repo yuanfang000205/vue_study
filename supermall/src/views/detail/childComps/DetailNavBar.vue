@@ -39,6 +39,11 @@
 </script>
 
 <style scoped>
+  #detailNavBar {
+    position: relative;
+    z-index: 9;
+    background-color: #ffffff;
+  }
   .title {
     display: flex;
     font-size: 15px;
