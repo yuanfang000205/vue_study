@@ -1,22 +1,24 @@
 <template>
-  <div class="params-info" v-if="Object.keys(paramsInfo).length !== 0">
-    <table v-for="(table,index1) in paramsInfo.rule.tables"
-           :key="index1" >
-      <tr v-for="(tr,index2) in table" :key="index2">
-        <td v-for="(td,index3) in tr" :key="index3">{{td}}</td>
-      </tr>
-    </table>
+  <div id="params-info">
+    <div class="params-info" v-if="Object.keys(paramsInfo).length !== 0">
+      <table v-for="(table,index1) in paramsInfo.rule.tables"
+             :key="index1" >
+        <tr v-for="(tr,index2) in table" :key="index2">
+          <td v-for="(td,index3) in tr" :key="index3">{{td}}</td>
+        </tr>
+      </table>
 
-    <table class="info-param">
-      <tr v-for="(item, index) in paramsInfo.info.set">
-        <td class="info-param-key">{{item.key}}</td>
-        <td class="param-value">{{item.value}}</td>
-      </tr>
-    </table>
+      <table class="info-param">
+        <tr v-for="(item, index) in paramsInfo.info.set">
+          <td class="info-param-key">{{item.key}}</td>
+          <td class="param-value">{{item.value}}</td>
+        </tr>
+      </table>
 
-    <!--<div class="info-img" v-if="paramsInfo.image.length !== 0">-->
-      <!--<img :src="paramsInfo.image" alt="">-->
-    <!--</div>-->
+      <div class="info-img" v-if="paramsInfo.image">
+        <img :src="paramsInfo.image" alt="">
+      </div>
+    </div>
   </div>
   
 </template>

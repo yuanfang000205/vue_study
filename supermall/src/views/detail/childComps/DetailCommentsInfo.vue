@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="comments-info">
     <div v-if="Object.keys(commentsInfo).length !== 0" class="comment-info">
       <div class="info-header">
         <div class="header-title">用户评价</div>
