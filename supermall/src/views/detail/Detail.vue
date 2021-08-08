@@ -2,6 +2,11 @@
   <div id="detail">
     <detail-nav-bar @titleClick="titleClick" ref="nav" class="detail-nav"/>
    <scroll class="content" ref="scroll" :probe-type="3" @scroll="detailScroll">
+     <ul>
+       <li v-for="item in $store.state.cartList">
+         {{item}}
+       </li>
+     </ul>
      <detail-swiper :top-images="topImages"/>
      <detail-base-info :goods="goods"/>
      <detail-shop-info :shop-info="shopInfo"/>
@@ -9,8 +14,11 @@
      <detail-params-info ref="params" :params-info="paramsInfo"/>
      <detail-comments-info ref="comments" :comments-info="commentsInfo"/>
      <goods-list ref="recommends" :goods="recommends"/>
+
    </scroll>
-    <detail-bottom-bar />
+    <back-top @click.native="backTop" v-show="isShowBackTop"/>
+
+    <detail-bottom-bar @addCart="addToCart"/>
   </div>
 
 </template>
@@ -29,7 +37,7 @@
   import {debounce} from "common/utils";
   import Scroll from "components/common/scroll/Scroll";
   import GoodsList from "components/content/goods/GoodsList";
-  import {itemListenerMixin} from "common/mixins";
+  import {itemListenerMixin,backListenerMixin} from "common/mixins";
 
 
   export default {
@@ -61,16 +69,14 @@
         currentIndex: 0
       }
     },
-    mounted(){
-
-    },
+    mixins: [itemListenerMixin,backListenerMixin],
     created() {
       // 1. 保存传入的iid
       this.iid = this.$route.params.iid
 
       // 2. 根据iid请求详情数据
       getDetails(this.iid).then(res => {
-        console.log(res);
+        // console.log(res);
         const data = res.result
         // 1.获取顶部轮播图
         this.topImages = data.itemInfo.topImages
@@ -132,7 +138,7 @@
           this.themeTopYs.push(this.$refs.comments.$el.offsetTop)
           this.themeTopYs.push(this.$refs.recommends.$el.offsetTop)
           this.themeTopYs.push(Number.MAX_VALUE)
-
+          // console.log(this.themeTopYs);
           // console.log(Number.MAX_VALUE);
 
         })
@@ -143,9 +149,9 @@
     },
     methods: {
       imageLoad() {
-        // this.newRefresh()
+        this.newRefresh()
         // console.log('...');
-        this.$refs.scroll.refresh()
+        // this.$refs.scroll.refresh()
         this.getThemeTopY()
 
       },
@@ -153,6 +159,7 @@
         this.$refs.scroll.scrollTo(0,-this.themeTopYs[index],200)
       },
       detailScroll(position) {
+        this.listenShowBackTop(position)
         // 获取y值
         const positionY = -position.y
         // themeTopYs：[a,b,c,d]
@@ -175,7 +182,22 @@
           //   this.$refs.nav.currentIndex = this.currentIndex
           // }
         }
+      },
+      addToCart() {
+        // 1.获取购物车需要展示的信息
+        const product = {}
+        product.image = this.topImages[0]
+        product.title = this.goods.title
+        product.desc = this.goods.desc
+        product.price = this.goods.realPrice
+        product.iid = this.iid
+
+        // 2.将商品添加到购物车里
+        // this.$store.cartList.push(product)
+        // this.$store.commit('addCart',product)
+        this.$store.dispatch('addCart',product)
       }
+
     }
   }
 </script>

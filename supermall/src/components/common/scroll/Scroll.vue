@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" ref="wrapper">
-    <div class="content">
+    <div>
       <slot></slot>
     </div>
   </div>
@@ -53,7 +53,6 @@
         this.scroll && this.scroll.finishPullUp()
       },
       refresh() {
-
         this.scroll && this.scroll.refresh()
       },
       getScrollY(){
@@ -64,5 +63,8 @@
 </script>
 
 <style scoped>
+  .wrapper {
+    overflow: hidden;
+  }
 
 </style>

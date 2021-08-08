@@ -6,7 +6,7 @@
                  ref="tabControl1"
                  v-show="isTabFixed" class="tab-control"/>
     <scroll class="content"
-            ref="homeScroll"
+            ref="scroll"
             :probe-type="3"
             @scroll="contentScroll"
             :pull-up-load="true"
@@ -20,8 +20,7 @@
                    ref="tabControl2"/>
       <goods-list :goods="showGoods"/>
     </scroll>
-    <back-top @click.native="btnClick" v-show="isShowBackTop"/>
-
+    <back-top @click.native="backTop" v-show="isShowBackTop"/>
   </div>
 </template>
 
@@ -34,7 +33,6 @@
   /* 当前项目业务处理组件 */
   import TabControl from "components/content/tabControl/TabControl";
   import GoodsList from "components/content/goods/GoodsList";
-  import BackTop from "components/content/backTop/BackTop";
 
   /* 公共业务处理组件 */
   import NavBar from 'components/common/navbar/NavBar';
@@ -44,13 +42,11 @@
   import {getHomeMultidata,getHomeGoods} from "network/home";
 
   /* 工具方法 */
-  import {debounce} from "common/utils";
-  import {itemListenerMixin} from "common/mixins";
+  import {itemListenerMixin,backListenerMixin} from "common/mixins";
 
   export default {
     name: "Home",
     components: {
-      BackTop,
       Scroll,
       GoodsList,
       NavBar,
@@ -69,25 +65,24 @@
           'sell':{page: 0,list: []},
         },
         currentType: 'pop',
-        isShowBackTop: false,
         tabOffsetTop: 0,
         isTabFixed: false,
         saveY: 0,
       }
     },
-    mixins: [itemListenerMixin],
+    mixins: [itemListenerMixin,backListenerMixin],
     computed: {
       showGoods() {
         return this.goods[this.currentType].list;
       }
     },
     activated() {
-      this.$refs.homeScroll.scrollTo(0,this.saveY,1)
-      this.$refs.homeScroll.refresh()
+      this.$refs.scroll.scrollTo(0,this.saveY,1)
+      this.$refs.scroll.refresh()
     },
     deactivated() {
       // 1.保存Y值
-      this.saveY = this.$refs.homeScroll.getScrollY()
+      this.saveY = this.$refs.scroll.getScrollY()
       // console.log(this.saveY)
       // 2.取消全局事件监听
       this.$bus.$off('imageLoad',this.itemListenerMixin)
@@ -102,10 +97,6 @@
       this.getHomeGoods('sell');
 
     },
-    mounted(){
-
-    },
-
     methods: {
       /**
        * 事件监听相关方法
@@ -124,14 +115,11 @@
         this.$refs.tabControl1.currentIndex = index
         this.$refs.tabControl2.currentIndex = index
       },
-      btnClick() {
-        this.$refs.homeScroll.scrollTo(0,0,500);
-      },
-      contentScroll(position){
-        // 1. 判断BackTop是否显示
-        this.isShowBackTop = (-position.y) > 1000
 
-        // 2. 判断TabControl是否吸顶
+      contentScroll(position){
+        this.listenShowBackTop(position)
+
+        //  判断TabControl是否吸顶
         this.isTabFixed = (-position.y) > this.tabOffsetTop
       },
       upLoadMore() {
@@ -161,7 +149,7 @@
           this.goods[type].page += 1;
 
           // 完成上拉加载后
-          this.$refs.homeScroll.finishPullUp()
+          this.$refs.scroll.finishPullUp()
 
         })
       }

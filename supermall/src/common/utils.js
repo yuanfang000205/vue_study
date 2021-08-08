@@ -2,10 +2,10 @@
 // 如果有传递 ‘immediate' 参数，会马上将函数安排到执行队列中，而不会延迟。
 export function debounce(func, wait,immediate) {
   let timeout = null;
-  return function(...args) {
+  return function() {
     if (timeout) clearTimeout(timeout);
     timeout = setTimeout(() => {
-      func.apply(this,args)
+      func.apply(this, arguments)
     },wait);}
 }
 

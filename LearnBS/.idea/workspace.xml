@@ -2,12 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124b72c6-2f19-46a4-b3a7-29ad87bc12f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../supermall/src/common/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/components/content/checkButton/CheckButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/views/cart/childComps/CartBottomBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/views/cart/childComps/CartList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supermall/src/views/cart/childComps/CartListItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../supermall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/69875d997eb3679667d81bfeb16c2f0b.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/69875d997eb3679667d81bfeb16c2f0b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d21c545d47f0c8c186f751638c38a46.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d21c545d47f0c8c186f751638c38a46.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a3dcc9b37a53a7f022c57432db56a4a8.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a3dcc9b37a53a7f022c57432db56a4a8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/d1e0170df2ad2e5c6db4f1590b02bffe.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/d1e0170df2ad2e5c6db4f1590b02bffe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/f91c8625ac48b3bb2737c492e55e4e61.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/f91c8625ac48b3bb2737c492e55e4e61.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/05d2d9303b7b014129404badf051b2f5.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/05d2d9303b7b014129404badf051b2f5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/151d58899e0e0c29d31512b400626a01.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/151d58899e0e0c29d31512b400626a01.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/25c82a68f3be19ae1407b1db6944b5f4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/25c82a68f3be19ae1407b1db6944b5f4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d6dd222003efe2b9a92231eb062dae5.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/6d6dd222003efe2b9a92231eb062dae5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/9bc0f3c0a326e8a4db96d6205ebcfcb1.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/9bc0f3c0a326e8a4db96d6205ebcfcb1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/9e6c8ff6df021822ecff082b56d5c083.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/9e6c8ff6df021822ecff082b56d5c083.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a9a2f5ecd0c92386f04330dadf0c3c07.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/a9a2f5ecd0c92386f04330dadf0c3c07.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/ce198f13bb1589b4b1bf4f8d7968cc95.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/ce198f13bb1589b4b1bf4f8d7968cc95.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/cfeb060a9c02d1c5598ec4dc506e915c.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/cfeb060a9c02d1c5598ec4dc506e915c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/de78b0944fa7b090f4cece97c52f10ec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/node_modules/.cache/vue-loader/de78b0944fa7b090f4cece97c52f10ec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/common/mixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/common/mixins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/common/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/common/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/components/common/scroll/Scroll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/components/common/scroll/Scroll.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/network/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/network/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/views/cart/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/cart/Cart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/views/detail/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/detail/Detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/views/detail/childComps/DetailBottomBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/detail/childComps/DetailBottomBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../supermall/src/views/home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../supermall相关笔记.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,42 +48,43 @@
     <session id="1063059641">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
+          <entry key="html" value="2" />
           <entry key="js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="2" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="481" />
+          <entry key="html" value="521" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="481" />
+          <entry key="HTML" value="521" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+            <state relative-caret-position="-162">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -86,6 +113,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/a.html" />
       </list>
     </option>
   </component>
@@ -96,8 +124,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="413" />
-    <option name="y" value="111" />
+    <option name="x" value="419" />
+    <option name="y" value="177" />
     <option name="width" value="1216" />
     <option name="height" value="919" />
   </component>
@@ -144,12 +172,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.a.html">
+    <configuration name="a.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnBS/a.html">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnBS/index.html">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.a.html" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.a.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -165,23 +201,20 @@
       <option name="presentableId" value="Default" />
       <updated>1627797954282</updated>
       <workItem from="1627797955822" duration="1416000" />
+      <workItem from="1628396201755" duration="518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1416000" />
+    <option name="totallyTimeSpent" value="1934000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="413" y="111" width="1216" height="919" extended-state="0" />
+    <frame x="419" y="177" width="1216" height="919" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.010186757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17911714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -189,6 +222,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -204,10 +241,17 @@
     <entry file="file://$PROJECT_DIR$/bscroll.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+        <state relative-caret-position="-162">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
