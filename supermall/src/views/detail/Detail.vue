@@ -2,11 +2,6 @@
   <div id="detail">
     <detail-nav-bar @titleClick="titleClick" ref="nav" class="detail-nav"/>
    <scroll class="content" ref="scroll" :probe-type="3" @scroll="detailScroll">
-     <ul>
-       <li v-for="item in $store.state.cartList">
-         {{item}}
-       </li>
-     </ul>
      <detail-swiper :top-images="topImages"/>
      <detail-base-info :goods="goods"/>
      <detail-shop-info :shop-info="shopInfo"/>
@@ -38,6 +33,8 @@
   import Scroll from "components/common/scroll/Scroll";
   import GoodsList from "components/content/goods/GoodsList";
   import {itemListenerMixin,backListenerMixin} from "common/mixins";
+
+  import {mapActions} from 'vuex'
 
 
   export default {
@@ -148,6 +145,7 @@
       this.$bus.$off('imageLoad',this.itemImgListener)
     },
     methods: {
+      ...mapActions(['addCart']),
       imageLoad() {
         this.newRefresh()
         // console.log('...');
@@ -176,11 +174,6 @@
             this.$refs.nav.currentIndex = this.currentIndex
           }
 
-          // if(this.currentIndex !== i && (i < length -1 && positionY >= this.themeTopYs[i] && positionY < this.themeTopYs[i+1]) ||
-          //   (i === length -1 && positionY >= this.themeTopYs[i])) {
-          //   this.currentIndex = i;
-          //   this.$refs.nav.currentIndex = this.currentIndex
-          // }
         }
       },
       addToCart() {
@@ -195,7 +188,15 @@
         // 2.将商品添加到购物车里
         // this.$store.cartList.push(product)
         // this.$store.commit('addCart',product)
-        this.$store.dispatch('addCart',product)
+        // this.$store.dispatch('addCart',product).then(res => {
+        //   console.log(res);
+        // })
+        this.addCart(product).then(res => {
+          console.log(res);
+          console.log(this.$toast);
+          this.$toast.show(res,2000)
+        })
+
       }
 
     }

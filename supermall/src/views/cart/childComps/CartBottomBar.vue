@@ -7,7 +7,7 @@
       <span>全选</span>
     </div>
     <div class="price">合计: ¥{{totalPrice}}</div>
-    <div class="calculate">去计算({{totalCount}})</div>
+    <div class="calculate" @click="calculate">去计算({{totalCount}})</div>
   </div>
 </template>
 
@@ -60,6 +60,14 @@
           //全部未选中或部分未选中
           this.cartList.forEach(item => item.checked = true)
 
+        }
+      },
+      calculate() {
+        // console.log(!undefined);
+        // console.log(!this.cartList.find(item => item.checked));
+        // 如果一个选中的都没有就提示需要选购，若有即不显示
+        if (!this.cartList.find(item => item.checked)) {
+          this.$toast.show('请选择购买的商品',2000)
         }
       }
     }
